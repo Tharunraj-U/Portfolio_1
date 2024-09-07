@@ -2,7 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import SectionWrapper from '../hoc/SectionWrapper';
-import { fadeIn, textVariant } from "../utils/motion";
+
+import { fadeIn } from "../utils/motion";
+import { textVariant } from "../utils/motion";
 // Correct the resume file extension to .pdf and ensure it's in the public directory
 import resume from "../assets/company/resume.pdf";  
 
