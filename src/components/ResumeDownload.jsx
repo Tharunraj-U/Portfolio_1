@@ -2,11 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import SectionWrapper from '../hoc/SectionWrapper';
-
-import { fadeIn } from "../utils/motion";
-import { textVariant } from "../utils/motion";
-// Correct the resume file extension to .pdf and ensure it's in the public directory
-import resume from "../assets/company/resume.pdf";  
+import { fadeIn, textVariant } from "../utils/motion"; // Combined import
+import resume from "../assets/company/resume.pdf";  // Ensure this path is correct
 
 const ResumeCard = ({ index, title, description, resumeUrl }) => (
   <motion.div
@@ -16,8 +13,8 @@ const ResumeCard = ({ index, title, description, resumeUrl }) => (
     <h3 className='text-white font-bold text-[24px]'>{title}</h3>
     <p className='text-white mt-2 text-[16px]'>{description}</p>
     <a
-      href={resumeUrl} // URL for the resume file
-      download="resume.pdf"  // Set the name for the downloaded file
+      href={resumeUrl}
+      download="resume.pdf"
       className='mt-5 inline-block bg-blue-500 text-white py-2 px-4 rounded'
     >
       Download Resume
@@ -29,7 +26,7 @@ const ResumeDownload = () => {
   const resumeDetails = {
     title: "My Resume",
     description: "Click the button below to download my resume.",
-    resumeUrl: resume  // This should refer to the correct resume file
+    resumeUrl: resume // Ensure the correct path for the resume file
   };
 
   return (
