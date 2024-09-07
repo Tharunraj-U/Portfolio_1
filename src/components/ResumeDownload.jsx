@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import SectionWrapper from '../hoc/SectionWrapper';
-import { fadeIn, textVariant } from "../utils/motion"; // Combined import
+import { fadeIn, textVariant } from "../utils/motion.js"; // Combined import
 import resume from "../assets/company/resume.pdf";  // Ensure this path is correct
 
 const ResumeCard = ({ index, title, description, resumeUrl }) => (
