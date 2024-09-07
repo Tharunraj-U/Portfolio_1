@@ -5,7 +5,7 @@ import SectionWrapper from '../hoc/SectionWrapper';
 import { styles } from '../styles';
 import { github } from '../assets'; // Assuming you have this icon in your assets
 import { projects } from '../constants'; // Import your project data
-import { fadeIn, textVariant } from '../Utils/motion';
+import { fadeIn, textVariant } from '../utils/motion';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (

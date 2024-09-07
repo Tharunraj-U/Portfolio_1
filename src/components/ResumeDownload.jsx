@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import SectionWrapper from '../hoc/SectionWrapper';
-import { fadeIn, textVariant } from "../Utils/motion"
+import { fadeIn, textVariant } from "../utils/motion"
  
 const ResumeCard = ({ index, title, description, resumeUrl }) => (
   <motion.div
