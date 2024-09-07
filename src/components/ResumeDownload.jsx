@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import SectionWrapper from '../hoc/SectionWrapper';
-import { fadeIn, textVariant } from "../utils/motion.js";
-
+import { fadeIn, textVariant } from "../Utils/motion'
+ 
 const ResumeCard = ({ index, title, description, resumeUrl }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
