@@ -13,7 +13,8 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
-      external: ['three'],
+      // Remove 'three' from external if you want it bundled
+      // external: ['three'],
       output: {
         // Manual chunking to split the larger bundles
         manualChunks(id) {
